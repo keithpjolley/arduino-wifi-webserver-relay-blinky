@@ -1,0 +1,13 @@
+#!/bin/sh
+
+while true
+do
+  n=0
+  while [ $n -lt 256 ]
+  do
+	echo $n
+	let n=n+1
+	wget -q --output-document="${n}.html" "http://192.168.1.132/${n}"
+	sleep 5
+  done
+done
