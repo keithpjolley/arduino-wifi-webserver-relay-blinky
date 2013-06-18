@@ -1,5 +1,10 @@
 #!/bin/sh
 
+# kjolley
+# july 2012
+
+arduino_ip="192.168.1.132"
+
 while true
 do
   n=0
@@ -7,7 +12,7 @@ do
   do
 	echo $n
 	let n=n+1
-	wget -q --output-document="${n}.html" "http://192.168.1.132/${n}"
+	wget -q --output-document="${n}.html" "http://${arduino_ip}/${n}"
 	sleep 5
   done
 done

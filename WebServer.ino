@@ -2,6 +2,9 @@
  * Socket App
  *
  * A simple socket application example using the WiShield 1.0
+ *
+ * updated kjolley, july 2012
+ *
  */
 
 
